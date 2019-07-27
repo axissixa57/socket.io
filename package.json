@@ -30,5 +30,17 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1"
+  },
+  "сomments": {
+    "cross-env": "Во избежание проблемы: Most Windows command prompts will choke when you set environment variables with NODE_ENV=production like that. (The exception is Bash on Windows, which uses native Bash.) Similarly, there's a difference in how windows and POSIX commands utilize environment variables. With POSIX, you use: $ENV_VAR and on windows you use %ENV_VAR%.",
+    "--config": "If for some reason you want to use different config file depending on certain situations you can change this via command line by using the --config flag",
+    "--hot": "позволяет задействовать плагин Hot Module Replacement, который производит повторный рендеринг при изменениях в компоненте. ",
+    "--inline": "Inline mode is recommended for Hot Module Replacement as it includes an HMR trigger from the websocket. Polling mode can be used as an alternative, but requires an additional entry point, 'webpack/hot/poll?1000'. Обычно используется вместе с --hot",
+    "npm-run-all": "A CLI tool to run multiple npm-scripts in parallel or sequential.",
+    "npm-run-all: command": {
+      "-l, --print-label": "Set the flag to print the task name as a prefix on each line of output. Tools in tasks may stop coloring their output if this option was given.",
+      "-p, --parallel <tasks>": "Run a group of tasks in parallel. e.g. 'npm-run-all -p foo bar' is similar to 'npm run foo & npm run bar'."
+    },
+    "--watch":"nodemon will only restart if there are changes in the ./server or ./server/index.js. By default nodemon will traverse sub-directories, so there's no need in explicitly including sub-directories."
   }
 }
